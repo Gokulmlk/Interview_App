@@ -1,10 +1,10 @@
-import Navbar from "@/components/home/Navbar";
-import Hero from "@/components/home/Hero";
+"use client";
+
 import Lightfall from "@/components/Lightfall";
 
-export default function Home() {
+export default function Background() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[#020617] text-white">
+    <>
       <div className="absolute inset-0 z-0">
         <Lightfall
           colors={["#A6C8FF", "#5227FF", "#FF9FFC"]}
@@ -26,11 +26,6 @@ export default function Home() {
       </div>
 
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-[#020617]/40 via-[#020617]/30 to-[#020617]/80" />
-
-      <div className="relative z-20">
-        <Navbar />
-        <Hero />
-      </div>
-    </main>
+    </>
   );
 }
